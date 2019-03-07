@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "EmerpusBot",
+  "version": "1.0.0",
+  "description": "EmerpusBot - Supreme bot is the fastest automated checkout solution for Supreme",
+  "icons": {"128": "./assets/images/10593.png"},
+  "browser_action": {
+		"default_icon": "./assets/images/10593.png",
+		"default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "*://www.supremenewyork.com/*",
+    "tabs",
+    "storage",
+    "background"
+  ],
+  "background": {
+    "scripts": ["./scripts/background/background.js"],
+    "persistent": false
+  }
+}

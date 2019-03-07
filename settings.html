@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings | EmerpusBot</title>
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link rel="stylesheet" href="./mdl/material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-tabs">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Платежные данные</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Выбор вещей</a>
+        <a href="#fixed-tab-3" class="mdl-layout__tab">Установка таймера</a>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+        <div class="page-content">
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp"> 
+            <form action="#" class="settings__form">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="text" id="sample3" placeholder="full name">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="text" id="sample3" placeholder="email">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="tel" id="sample3" placeholder="tel">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="text" id="sample3" placeholder="address">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+            
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="text" id="sample3" placeholder="city">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="text" id="sample3" placeholder="postcode">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select class="mdl-textfield__input payment-info" type="text" id="sample3">
+                  <option value="RU">RUSSIA</option>
+                </select>
+              </div>
+            </form>     
+          </div>
+
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <form action="#" class="settings__form">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select class="mdl-textfield__input payment-info" type="text" id="sample3">
+                  <option value="visa">Visa</option>
+                  <option value="american_express">American Express</option>
+                  <option value="master">Mastercard</option>
+                  <option value="solo">Solo</option>
+                  <option value="paypal">PayPal</option>
+                </select>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="text" id="cardNumber" maxlength="19" placeholder="number">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+            
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select class="mdl-textfield__input payment-info" type="text" id="sample3">
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                </select>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select class="mdl-textfield__input payment-info" type="text" id="sample3">
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <option value="2026">2026</option>
+                  <option value="2027">2027</option>
+                  <option value="2028">2028</option>
+                </select>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input payment-info" type="tel" id="sample3" maxlength="4" placeholder="CVV">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="savePaymentInfoButton">
+                Сохранить
+              </button> 
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-2">
+        <div class="page-content">
+          <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+            <form action="#" class="settings__form">
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input item-info" type="text" id="sample3" placeholder="Название вещи">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+            
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <select class="mdl-textfield__input item-info" type="text" id="sample3">
+                  <option value="Medium">Medium</option>
+                  <option value="Large">Large</option>
+                  <option value="XLarge">XLarge</option>
+                </select>
+              </div>
+
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input item-info" type="text" id="sample3" placeholder="Цвет">
+                <label class="mdl-textfield__label" for="sample3"></label>
+              </div>
+
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="saveItemInfoButton">
+                Сохранить
+              </button> 
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="mdl-layout__tab-panel" id="fixed-tab-3">
+        <div class="page-content"><!-- Your content goes here --></div>
+      </section>
+    </main>
+  </div>
+
+  <style>
+    .mdl-layout__header {
+      justify-content: flex-end;
+    }
+    .page-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 64px);
+    }
+    .demo-card-wide.mdl-card {
+      display: flex;
+      justify-content: center;
+      width: 512px;
+      height: 512px;
+      margin: 0 2rem;
+    }
+
+    .settings__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .mdl-textfield {
+      width: 400px;
+    }
+
+    .mdl-button {
+      margin: 2rem 0;
+    }
+  </style>
+<script src="./mdl/material.min.js"></script>
+<script src="./scripts/settings/settings.js"></script>
+</body>
+</html>
